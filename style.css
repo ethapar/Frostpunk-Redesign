@@ -1,0 +1,98 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #130d0a;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+}
+
+#hero {
+    height: 1440px;
+    overflow: hidden;
+    position: relative;
+}
+
+.layer {
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1440px;
+    position: fixed;
+    z-index: -1;
+}
+
+#hero-mobile {
+    display: none;
+    background: url("layers/full-small.png") no-repeat center top/cover;
+    height: 812px;
+}
+
+h1 {
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #ede0d5;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+#hero,
+.layer {
+    min-height: 800px;
+}
+
+.layer-11 {
+    background-image: url("layers/layer11.png");
+}
+
+.layer-10 {
+    background-image: url("layers/layer1.png");
+}
+
+.layer-9 {
+    background-image: url("layers/layer2.png");
+}
+
+.layer-8 {
+    background-image: url("layers/layer3.png");
+}
+
+.layer-7 {
+    background-image: url("layers/layer4.png");
+}
+
+.layer-6 {
+    background-image: url("layers/layer5.png");
+}
+
+.layer-5 {
+    background-image: url("layers/layer6.png");
+}
+
+.layer-4 {
+    background-image: url("layers/layer7.png");
+}
+
+.layer-3 {
+    background-image: url("layers/layer8.png");
+}
+
+.layer-2 {
+    background-image: url("layers/layer9.png");
+}
+
+.layer-1 {
+    background-image: url("layers/layer10.png");
+}
+
+@media only screen and (max-width: 768px) {
+    #hero {
+        display: none;
+    }
+    #hero-mobile {
+        display: block;
+    }
+}
