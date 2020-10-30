@@ -1,9 +1,33 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #130d0a;
+    background-color: #000002;
     font-family: 'Playfair Display', serif;
     color: #fff;
+}
+
+.main-quotes {
+    background-color: #000002;
+}
+
+.first-section {
+    padding: 50px 0 20px 0;
+}
+
+.text-header {
+    font-size: 50px;
+    text-align: center;
+}
+
+h1 {
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #ede0d5;
+    font-size: 18px;
+    line-height: 150%;
 }
 
 #hero {
@@ -14,12 +38,17 @@ body {
 
 .layer {
     background-position: top center;
-    background-size: contain;
     background-repeat: no-repeat;
-    width: 100%;
+    background-size: contain;
     height: 1440px;
     position: fixed;
+    width: 100%;
     z-index: -1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: none;
 }
 
 #hero-mobile {
@@ -42,6 +71,10 @@ p {
 #hero,
 .layer {
     min-height: 800px;
+}
+
+.layer-12 {
+    background-image: url("layers/layer12.png");
 }
 
 .layer-11 {
