@@ -5,31 +5,88 @@
     <meta charset="UTF-8">
     <title>Frostpunk</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div id='hero'>
-        <div class='layer-1 layer' data-depth='0.01' data-type='parallax'></div>
-        <div class='layer-11 layer' data-depth='0.20' data-type='parallax'></div>
-        <div class='layer-2 layer' data-depth='0.1' data-type='parallax'></div>
-        <div class='layer-3 layer' data-depth='0.15' data-type='parallax'></div>
-        <div class='layer-4 layer' data-depth='0.25' data-type='parallax'></div>
-        <div class='layer-5 layer' data-depth='0.35' data-type='parallax'></div>
-        <div class='layer-6 layer' data-depth='0.60' data-type='parallax'></div>
-        <div class='layer-7 layer' data-depth='0.70' data-type='parallax'></div>
-        <div class='layer-8 layer' data-depth='0.80' data-type='parallax'></div>
-        <div class='layer-9 layer' data-depth='0.90' data-type='parallax'></div>
-        <div class='layer-10 layer' data-depth='1.00' data-type='parallax'></div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="hero">
+        <!--Parallax header-->
+
+        <div class="layer-1 layer" data-depth="0.05" data-type="parallax"></div>
+        <div class="layer-11 layer" data-depth="0.20" data-type="parallax"></div>
+        <div class="layer-2 layer" data-depth="0.1" data-type="parallax"></div>
+        <div class="layer-3 layer" data-depth="0.15" data-type="parallax"></div>
+        <div class="layer-4 layer" data-depth="0.25" data-type="parallax"></div>
+        <div class="layer-5 layer" data-depth="0.35" data-type="parallax"></div>
+        <div class="layer-6 layer" data-depth="0.60" data-type="parallax"></div>
+        <div class="layer-7 layer" data-depth="0.70" data-type="parallax"></div>
+        <div class="layer-8 layer" data-depth="0.80" data-type="parallax"></div>
+        <div class="layer-9 layer" data-depth="0.90" data-type="parallax"></div>
+        <div class="layer-10 layer" data-depth="1.00" data-type="parallax"></div>
+
+
     </div>
-    <div id='hero-mobile'></div>
+    <div id="hero-mobile"></div>
+    <!--Mobile header for non-parallax-->
+
+    <div class="main-quotes">
+        <div class="container">
+            <section class="first-section">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>To preserve civilization from the chaos of its own downfall, we have fled to the end of the world.</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>In the summer of 1886 the snowstorms began. Crops failed, people starved. Millions fled south. They met only destruction, famine, and death.</p>
+                        <p>In the farthest reaches of resource-rich north, the British Empire began construction of massive heat-radiating Generators, These grand engines would allow a chosen few to survive the frigid global winter, safe from the chaos of
+                            crumbling civilization. They ran out of time.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>An apocalyptic ice storm came from the south, devouring all in its path. People fled in panic. Some managed to cross the seas and reach the site of a Generator, only to find it frozen solid. The Generator was designed to power
+                            a City capable of weathering the end of the world...</p>
+                        <p>It falls to us to build it.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 
 
 
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
 
