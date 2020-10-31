@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+<body onscroll="animateIfInView()">
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-lg">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -35,10 +35,8 @@
             </div>
         </div>
     </nav>
-
     <div id="hero">
         <!--Parallax header-->
-
         <div class="layer-1 layer" data-depth="0.05" data-type="parallax"></div>
         <div class="layer-11 layer" data-depth="0.20" data-type="parallax"></div>
         <div class="layer-2 layer" data-depth="0.1" data-type="parallax"></div>
@@ -50,8 +48,6 @@
         <div class="layer-8 layer" data-depth="0.80" data-type="parallax"></div>
         <div class="layer-9 layer" data-depth="0.90" data-type="parallax"></div>
         <div class="layer-10 layer" data-depth="1.00" data-type="parallax"></div>
-
-
     </div>
     <div id="hero-mobile"></div>
     <!--Mobile header for non-parallax-->
@@ -59,15 +55,15 @@
     <div class="main-quotes">
         <div class="container">
             <section class="first-section">
-                <div class="row">
-                    <div class="col-sm-6">
+                <div class="row fade" style="transition-delay: 0ms;">
+                    <div class="col-sm-6 fade">
                         <h1>To preserve civilization from the chaos of its own downfall, we have fled to the end of the world.</h1>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row fade" style="transition-delay: 0ms;">
                     <div class="col-sm-6">
                         <p>In the summer of 1886 the snowstorms began. Crops failed, people starved. Millions fled south. They met only destruction, famine, and death.</p>
-                        <p>In the farthest reaches of resource-rich north, the British Empire began construction of massive heat-radiating Generators, These grand engines would allow a chosen few to survive the frigid global winter, safe from the chaos of
+                        <p> In the farthest reaches of resource-rich north, the British Empire began construction of massive heat-radiating Generators, These grand engines would allow a chosen few to survive the frigid global winter, safe from the chaos of
                             crumbling civilization. They ran out of time.</p>
                     </div>
                     <div class="col-sm-6">
@@ -79,6 +75,127 @@
             </section>
         </div>
     </div>
+
+    <section class="main-timeline">
+        <section class="main-timeline__header">
+            <div class="main-timeline__header-container">
+                <hr>
+                <h1>&darr;</h1>
+            </div>
+        </section>
+        <section class="main-timeline__list">
+            <ul>
+                <li>
+                    <div class="timeline-details">
+                        <time>1822 (63 BGF)</time>
+                        <p>
+                            In 1822, British mathematician Charles Babbage conceives of a steam-driven calculating machine that would be able to compute tables of numbers. With increasing government funding, he was able to build the Difference Engine: the world's first computer.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-details">
+                        <time>1822–1886 (63 BGF – Year 0)</time>
+                        <p>
+                            Somewhere between 1822 and 1886, the Steam Core was invented by Professor Hawkins. However, all knowledge regarding the manufacture of Steam Cores was lost during the Great Frost and in the ensuing chaos of civilizations' collapse.
+                        </p>
+                        <p>
+                            The few intact Steam Cores available to the residents of the Last Cities must now be salvaged from buildings or derelicts dotting the Frostlands.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-details">
+                        <time>1822–1886 (63 BGF – Year 0)</time>
+                        <p>
+                            Concurrent with the invention of Steam Cores, and doubtless building upon the success of Babbage's project, sometime between 1822 and 1886 the giant steam-powered robots known as Automatons were invented.
+                        </p>
+                        <p>
+                            These huge machines, towering over people and structures, were the pinnacle of human engineering before the Great Frost.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-details">
+                        <time>1886 (Year 0) – The Arrival of the Great Frost</time>
+                        <p>
+                            In the summer of 1886 the Great Frost began. Initially it presented as a chain of strange weather patterns, frost during summer, killer snowstorms in the northern countries, never-ending rain storms in the Sahara and an ever increasing drop in temperatures
+                            worldwide.
+                        </p>
+                        <p>The United Kingdom and several other countries sent out expeditions to the North to conduct research into the origin of the incipient changes in climate. Many of these British research outposts were equipped with Heat Generator
+                            Towers to enable prolonged study of these phenomena.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-details">
+                        <p>
+                            Meanwhile in Britain and in the rest of Europe, the general atmosphere deteriorated rapidly. As even the hardiest crops began to fail, starvation had set in among the public. As days became months, millions of desperate people fled south in search of
+                            warmer weather and sources of food. They were met with chaos, famine, and death. </p>
+                        <p> Anarchy erupted as man turned against man in a struggle over the few remaining resources, civilization slowly crumbled under the growing weight of snow and ice.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-details">
+                        <p>
+                            In an attempt to save the Empire and its people, the British Government arrived at two solutions. The first involved sending multiple naval vessels with refugees to their colonial holdings in South America, East and South Africa, India, and Australia
+                            where it was warmer.
+                        </p>
+                        <p> The other plan would involve sending icebreakers and purpose-built Land Dreadnoughts with refugees to the farthest reaches of the resource-rich North, where members of the British Science Expeditions have finished the construction
+                            of heat-producing Generators, and where a chosen few could survive the environmental catastrophe and the consequent socioeconomic collapse.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-details">
+                        <p>
+                            However, the strategy of the British Government was thwarted by Mother Nature herself. An ice storm of apocalyptic proportions came from the south, devouring all in its path, and severing all communication and travel between Britain and rest of its Empire.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-details">
+                        <time>1886 (Year 0) – The Last Autumn</time>
+                        <p>
+                            With the ever-lasting cold bringing about famine, starvation and bread riots all throughout Britain and with its colonial empire having been destroyed by an apocalyptic ice storm, the British Government, robbed of any other options, begun mobilizing all
+                            available resources to carry out a complete evacuation of the British Isles, with the intent of evacuating as many people as possible to the coal-rich north to save what still could be saved of the British Empire.
+                        </p>
+                        <p>The Imperial Exploration Company was tasked with the goal of navigating to the sites of the British Science Expeditions' research outposts, construct Heat Generator Towers, and thus create safe havens for the people of Britain
+                            to survive through the approaching cold and eventually re-establish both the empire and civilization.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-details">
+                        <time>1886 (Year 0) – An End to the Old World</time>
+                        <p>
+                            Once the Great Frost arrived in force and consumed the northern hemisphere, civilization collapsed. It is not known exactly what happened, but the results speak for themselves. Just as the Great Frost begun to approach Britain, the British Government,
+                            financially exhausted and teetering on the brink of bankruptcy, ordered the complete evacuation of the British Isles. Anything and everything was seized and outfitted to transport many citizens to the generator sites, with
+                            a seeming priority on the wealthy upper class.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-details">
+                        <time>1886 (Year 0) - The Final Collapse</time>
+                        <p>This would ultimately turn out to be the last act of the British Empire, as by the end of 1886, the United Kingdom, the United States and the British dominions had been reduced to little more than scattered groups of survivors
+                            and refugees, desperately trying to make their way north to the generator sites. Many died in the harsh, icy and cold conditions while others became lost and trapped out in the Frostlands, but some groups of survivors have
+                            succeeded in reaching the safety of the Generator site...We hope.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-details">
+                        <time>Lost and Scattered, but Not Defeated
+                        </time>
+                        <p>After weeks, even months of traveling, our Land Dreadnought from London finally ran out of coal and gave up the ghost. With little choice left, us few London Survivors left the Dreadnought to make the long trek to the generator
+                            site. The journey towards the site was long and grueling, and many died due to exhaustion, hunger or bitter cold. Misfortune struck when our convoy was separated during a blizzard. Of our group of several hundred survivors,
+                            only small a group of 80 people under the leadership of our Captain was able reach the site.</p>
+                        <p>...Only to find the Generator stone cold and abandoned.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </section>
 
 
 
