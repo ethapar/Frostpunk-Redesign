@@ -6,6 +6,10 @@ body {
     color: #fff;
 }
 
+.page-footer {
+    background-color: black;
+}
+
 .main-quotes {
     background-color: #000002;
 }
@@ -34,6 +38,10 @@ p {
     height: 1080px;
     overflow: hidden;
     position: relative;
+}
+
+.footer-copyright {
+    padding-top: 30px;
 }
 
 .fade {
@@ -167,6 +175,12 @@ p {
 @media only screen and (min-width: 1440px) {
     #hero {
         height: 800px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    #hero {
+        height: 1100px;
     }
 }
 
