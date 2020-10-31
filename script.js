@@ -15,17 +15,11 @@
             layer.style.transform = translate3d;
         }
     });
-
 }).call(this);
 
 (function() {
-
     'use strict';
-
-    // define variables
     var items = document.querySelectorAll(".main-timeline li");
-
-    // check if an element is in viewport
     // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
     function isElementInViewport(el) {
         var rect = el.getBoundingClientRect();
@@ -44,12 +38,9 @@
             }
         }
     }
-
-    // listen for events
     window.addEventListener("load", callbackFunc);
     window.addEventListener("resize", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
-
 })();
 
 function animateIfInView() {
@@ -62,21 +53,16 @@ function animateIfInView() {
         };
     });
 }
-
 // http://stackoverflow.com/a/7557433/5628
 function isElementInViewport(el) {
-
-    //special bonus for those using jQuery
     if (typeof jQuery === "function" && el instanceof jQuery) {
         el = el[0];
     }
-
     var rect = el.getBoundingClientRect();
-
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }

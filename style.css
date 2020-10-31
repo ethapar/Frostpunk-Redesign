@@ -34,7 +34,7 @@ p {
     line-height: 150%;
 }
 
-#hero {
+#main-banner {
     height: 1080px;
     overflow: hidden;
     position: relative;
@@ -42,6 +42,7 @@ p {
 
 .footer-copyright {
     padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .fade {
@@ -92,7 +93,7 @@ p {
     }
 }
 
-#hero-mobile {
+#main-banner__mobile {
     display: none;
     background: url("layers/full-small.png") no-repeat center top/cover;
     height: 812px;
@@ -158,34 +159,34 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-    #hero {
+    #main-banner {
         display: none;
     }
-    #hero-mobile {
+    #main-banner__mobile {
         display: block;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-    #hero {
+    #main-banner {
         height: 550px;
     }
 }
 
 @media only screen and (min-width: 1440px) {
-    #hero {
+    #main-banner {
         height: 800px;
     }
 }
 
 @media only screen and (min-width: 1920px) {
-    #hero {
+    #main-banner {
         height: 1100px;
     }
 }
 
 @media only screen and (min-width: 2560px) {
-    #hero {
+    #main-banner {
         height: 1080px;
     }
 }
