@@ -79,8 +79,8 @@ p {
     }
     .navbar-collapse {
         background-color: #000002;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
 }
 
@@ -213,7 +213,7 @@ p {
 }
 
 .main-timeline {
-    background-image: url("images/explorers.png");
+    background-image: url("images/wreckage.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
