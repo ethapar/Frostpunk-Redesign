@@ -1,5 +1,114 @@
+/* General settings
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 #main-banner {
     height: 1080px;
     overflow: hidden;
     position: relative;
+}
+
+#main-banner__mobile {
+    display: none;
+    background: url("../../images/layers/full-small.png") no-repeat center top/cover;
+    height: 812px;
+}
+
+.layer {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1080px;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+
+
+/* Parallax images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.layer-12 {
+    background-image: url("../../images/layers/layer2/layer12.png");
+}
+
+.layer-11 {
+    background-image: url("../../images/layers/layer2/layer11.png");
+}
+
+.layer-10 {
+    background-image: url("../../images/layers/layer2/layer1.png");
+}
+
+.layer-9 {
+    background-image: url("../../images/layers/layer2/layer2.png");
+}
+
+.layer-8 {
+    background-image: url("../../images/layers/layer2/layer3.png");
+}
+
+.layer-7 {
+    background-image: url("../../images/layers/layer2/layer4.png");
+}
+
+.layer-6 {
+    background-image: url("../../images/layers/layer2/layer5.png");
+}
+
+.layer-5 {
+    background-image: url("../../images/layers/layer2/layer6.png");
+}
+
+.layer-4 {
+    background-image: url("../../images/layers/layer2/layer7.png");
+}
+
+.layer-3 {
+    background-image: url("../../images/layers/layer2/layer8.png");
+}
+
+.layer-2 {
+    background-image: url("../../images/layers/layer2/layer9.png");
+}
+
+.layer-1 {
+    background-image: url("../../images/layers/layer10.png");
+}
+
+
+/* Responsiveness
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+    #main-banner {
+        display: none;
+    }
+    #main-banner__mobile {
+        display: block;
+    }
+    /* for mobile */
+}
+
+@media only screen and (min-width: 1024px) {
+    #main-banner {
+        height: 550px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #main-banner {
+        height: 800px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    #main-banner {
+        height: 1100px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    #main-banner {
+        height: 1080px;
+    }
 }

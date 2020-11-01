@@ -1,0 +1,44 @@
+.main-quotes {
+    background-color: #000002;
+}
+
+.main-quotes__content {
+    padding: 50px 0 20px 0;
+}
+
+
+/* Animations
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.fade {
+    opacity: 0;
+    -webkit-transform: translate(0, 50px);
+    -moz-transform: translate(0, 50px);
+    -ms-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+    -webkit-transition: opacity .8s .1s, transform .8s ease;
+    transition: opacity .8s .1s, transform .8s ease;
+    transition-delay: 0ms;
+}
+
+.fade-in-view {
+    /*for fading out when not in view */
+    opacity: 1!important;
+    -webkit-transform: translate(0, 0)!important;
+    -moz-transform: translate(0, 0)!important;
+    -ms-transform: translate(0, 0)!important;
+    transform: translate(0, 0)!important;
+}
+
+
+/* Responsiveness
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 425px) {
+    .main-quotes h1 {
+        font-size: 23px;
+    }
+    .main-quotes__content p {
+        font-size: 13px;
+    }
+}

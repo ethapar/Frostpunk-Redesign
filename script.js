@@ -1,3 +1,5 @@
+//Parallax Header
+
 (function() {
     window.addEventListener('scroll', function(event) {
         var depth, i, layer, layers, len, movement, topDistance, translate3d;
@@ -16,6 +18,8 @@
         }
     });
 }).call(this);
+
+//Timeline
 
 (function() {
     'use strict';
@@ -42,6 +46,8 @@
     window.addEventListener("resize", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
 })();
+
+//Main Quotes
 
 function animateIfInView() {
     $.each($('.fade'), function(key, value) {
