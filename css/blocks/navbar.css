@@ -1,0 +1,18 @@
+.navbar {
+    margin-bottom: 0;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    nav.navbar {
+        background: transparent;
+    }
+    .navbar-toggle {
+        border: none;
+    }
+    .navbar-collapse {
+        background-color: #000002;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
