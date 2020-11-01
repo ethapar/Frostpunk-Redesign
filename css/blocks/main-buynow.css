@@ -1,0 +1,24 @@
+.btn-info {
+    background-color: #ADCADC;
+    border: none;
+    color: black;
+}
+
+.btn:active:focus {
+    background-color: black !important;
+    border: none !important;
+}
+
+.btn:active {
+    background-color: black !important;
+    border: none !important;
+}
+
+.btn:hover {
+    background-color: #729CAC !important;
+}
+
+.main-buynow {
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
