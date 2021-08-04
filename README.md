@@ -1,5 +1,5 @@
 # Frostpunk-Redesign
-This was created, in part, to be a redesign of https://www.frostpunkgame.com/. However, the main goal of this was to practice creating parallax headers and other simple JS animations.
+This was created, in part, to be a redesign of the website: https://www.frostpunkgame.com/. However, the main goal of this was to practice creating parallax headers and other simple JS animations.
 
 All imagery is sourced straight from the original website content belongs solely to 11bit Studios.
 
